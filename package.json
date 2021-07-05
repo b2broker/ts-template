@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build": "npm run build:remove && tsc",
+    "build:remove": "rm -rf ./build",
+    "install:clean": "rm -fr node_modules && rm -f package-lock.json && npm install",
+    "postpublish": "npm run build:remove",
+    "publish:test": "npm publish --dry-run"
+  },
+  "devDependencies": {
+    "@b2broker/tsconfig": "^1.0.3"
+  }
+}
