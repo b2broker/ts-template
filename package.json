@@ -3,13 +3,17 @@
     "build": "npm run build:remove && tsc",
     "build:remove": "rm -rf ./build",
     "install:clean": "rm -fr node_modules && rm -f package-lock.json && npm install",
+    "lint": "eslint --ext .ts ./",
+    "lint:fix": "npm run lint -- --fix",
     "postpublish": "npm run build:remove",
+    "prepublishOnly": "npm run build && npm run prettier:write",
     "prettier": "prettier -c .",
     "prettier:write": "npm run prettier -- --write",
     "publish:test": "npm publish --dry-run"
   },
   "devDependencies": {
     "@b2broker/tsconfig": "^1.0.3",
+    "eslint-config-b2broker-ts": "^1.0.3",
     "prettier": "^2.3.2"
   }
 }
