@@ -4,9 +4,12 @@
     "build:remove": "rm -rf ./build",
     "install:clean": "rm -fr node_modules && rm -f package-lock.json && npm install",
     "postpublish": "npm run build:remove",
+    "prettier": "prettier -c .",
+    "prettier:write": "npm run prettier -- --write",
     "publish:test": "npm publish --dry-run"
   },
   "devDependencies": {
-    "@b2broker/tsconfig": "^1.0.3"
+    "@b2broker/tsconfig": "^1.0.3",
+    "prettier": "^2.3.2"
   }
 }
