@@ -17,6 +17,7 @@
     "@b2broker/tsconfig": "^1.0.3",
     "commitlint-config-b2broker": "^1.0.4",
     "eslint-config-b2broker-ts": "^1.0.3",
+    "lint-staged": "^11.0.0",
     "prettier": "^2.3.2"
   }
 }
