@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "@b2broker/tsconfig": "^1.0.3",
+    "@types/mocha": "^8.2.2",
     "commitlint-config-b2broker": "^1.0.4",
     "eslint-config-b2broker-ts": "^1.0.3",
     "husky": "^7.0.0",
